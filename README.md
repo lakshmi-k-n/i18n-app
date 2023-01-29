@@ -24,4 +24,7 @@ Install all the required dependencies
 - Refer .env-example file for more
 
  ### Run migrations and start server  
- `python manage.py runserver 0.0.0.0:8001`
+ `python manage.py runserver 0.0.0.0:8001`  
+ 
+ ### Preview  
+![Screenshot at 2023-01-30 02-17-43](https://user-images.githubusercontent.com/8734795/215355070-e60aac97-e0c4-47a3-8f8d-529174c47fa4.jpg)
