@@ -11,6 +11,14 @@ class TimestampedModel(models.Model):
         abstract = True
 
 
+class BookGenre(TimestampedModel):
+    name = JSONField(schema=SCHEMA)
+    parent = models.ForeignKey('self',
+                             related_name="sub_genres",
+                             on_delete=models.CASCADE,
+                             null=True, blank=True)
+
+
 class Book(TimestampedModel):
     BOOK_TYPES = (("PAPERBACK", "Paperback"), 
                     ("HANDMADE", "Handmade"),
@@ -20,3 +28,9 @@ class Book(TimestampedModel):
     book_type = models.CharField(max_length=20,
                                 choices=BOOK_TYPES,
                                 default="PAPERBACK")
+    genre = models.ForeignKey(BookGenre,
+                             related_name="books",
+                             on_delete=models.CASCADE,
+                             null=True, blank=True)
+
+
