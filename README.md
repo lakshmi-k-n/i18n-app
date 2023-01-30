@@ -1,4 +1,4 @@
-# i8n-app
+# i18n-app
 Support for plugging in JSONfield editor to add translations of text. For this implementation, I have used `django-jsonform` to create a JSON based editor.  
 
 
@@ -28,3 +28,7 @@ Install all the required dependencies
  
  ### Preview  
 ![Screenshot at 2023-01-30 02-17-43](https://user-images.githubusercontent.com/8734795/215355070-e60aac97-e0c4-47a3-8f8d-529174c47fa4.jpg)
+
+## Tree  
+Find a writeup about the Tree structure [here](https://cliff-cent-abc.notion.site/Tree-f39f043497ad4763bd0593437b95f758)  
+This tree structure is demonstarted by the `BookGenre` model in `books.models`.
